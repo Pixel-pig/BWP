@@ -29,8 +29,7 @@ func (u *UserloginController) Post() {
 	defer db_mysql.CloneDB()
 	_, err = user2.SaveUserInfo()
 	if err != nil {
-		u.Ctx.WriteString("错误")
-		log.Fatal("数据存储错误"+err.Error())
+		u.TplName = "ErrorPage.html"
 	}
 	u.Ctx.WriteString("成功")
 }

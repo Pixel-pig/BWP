@@ -1,14 +1,12 @@
-
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>代码雨背景用户注册表单代码 </title>
-
-    <link type="text/css" href="css/regist/css" rel="stylesheet" />
-
+    <link type="text/css" href="/static/css/regist.css" rel="stylesheet"/>
 </head>
-
+<body>
 <!-- 登录 -->
 <div class="register">
     <form id="ajaxForm" class="login-wrap">
@@ -42,7 +40,6 @@
         </ul>
     </form>
 </div>
-
 <!--代码雨区域-->
 <canvas id="canvas" style="background:#000"></canvas>
 <script>
@@ -63,6 +60,7 @@
             coordinate.push(0);
         }
         var str = "javascript html5 canvas";
+
         function draw() {
             // 背景色
             context.fillStyle = "rgba(0,0,0,0.05)";
