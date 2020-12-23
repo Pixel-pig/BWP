@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>区块链学习工具</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/three.js/r63/three.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css">
+    <script type="text/javascript" src="/static/js/login.js"></script>
+</head>
+<body>
+
+<div class="main">
+    <div class="login">
+        <form method="post" action="/Userlogin">
+            <div class="log-con">
+                <span>登录</span>
+                <label>
+                    <input type="text" name="username" class="name" placeholder="请输入用户名"/>
+                    <input type="text" name="pwd" class="password" placeholder="请输入密码"/>
+                    <input type="text" class="code" placeholder="请输入验证码"/>
+                </label>
+                <input type="button" id="code" onclick="change();"/>
+                <input type="submit" value="立即登录">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="copyright">
+    <a>版权所有　© C190603 H GROUP</a>
+</div>
+
+
+</body>
+</html>
