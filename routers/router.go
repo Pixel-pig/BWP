@@ -18,4 +18,6 @@ func init() {
 	beego.Router("/Btc_home.html",&controllers.Btc_home{})
 	//功能页面
 	beego.Router("/obtain.html",&controllers.Obtain{})
+	//调用方法
+	beego.Router("/obtain",&controllers.Obtain{})
 }

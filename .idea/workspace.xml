@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75e00d87-6f90-46e5-bdea-064f3cc5e834" name="Default Changelist" comment="" />
+    <list default="true" id="75e00d87-6f90-46e5-bdea-064f3cc5e834" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Btc_home.html/W3C 教程_w3cschool.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/login.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/obtain.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/obtain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/BTCService.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/BTCService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/obtain.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/obtain.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +30,11 @@
     </option>
   </component>
   <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lv1SD6Loo9p3oedpDl0jpBv8o1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -90,36 +105,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="148" key="GridCell.Tab.0.bottom" timestamp="1608780921856">
+    <state width="1237" height="178" key="GridCell.Tab.0.bottom" timestamp="1608814159057">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="148" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1608780921856" />
-    <state width="1237" height="148" key="GridCell.Tab.0.center" timestamp="1608780921856">
+    <state width="1237" height="178" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1608814159057" />
+    <state width="1237" height="178" key="GridCell.Tab.0.center" timestamp="1608814159057">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="148" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1608780921856" />
-    <state width="1237" height="148" key="GridCell.Tab.0.left" timestamp="1608780921856">
+    <state width="1237" height="178" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1608814159057" />
+    <state width="1237" height="178" key="GridCell.Tab.0.left" timestamp="1608814159057">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="148" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1608780921856" />
-    <state width="1237" height="148" key="GridCell.Tab.0.right" timestamp="1608780921856">
+    <state width="1237" height="178" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1608814159057" />
+    <state width="1237" height="178" key="GridCell.Tab.0.right" timestamp="1608814159057">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="148" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1608780921856" />
+    <state width="1237" height="178" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1608814159057" />
     <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1608692739399">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1608692739399" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/main.go</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -2,6 +2,7 @@ package util
 
 import (
 	"BcRPCCode/entlity"
+	"fmt"
 	"net/http"
 )
 
@@ -13,8 +14,9 @@ func GetBestBlockHash() interface{} {
 		return nil
 	}
 	if response.StatusCode == http.StatusOK {
-		count := Analysis(response, body)
-		return count.Result
+		besthash := Analysis(response, body)
+		fmt.Println("最新区块hash:", besthash.Result)
+		return besthash.Result
 	}
 	return nil
 }
@@ -28,6 +30,7 @@ func GetBlockCount() interface{} {
 	}
 	if response.StatusCode == http.StatusOK {
 		count := Analysis(response, body)
+		fmt.Println("区块的总数:", count.Result)
 		return count.Result
 	}
 	return nil

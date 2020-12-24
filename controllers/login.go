@@ -19,11 +19,12 @@ func (l *Login) Post() {
 		return
 	}
 	u, err := users.QueryUser()
-	if err!=nil {
+	if err != nil {
 		fmt.Println(err)
 		l.Ctx.WriteString("抱歉，用户登入失败，请重试！")
 		return
 	}
-	l.Data["Phone"]=u.Phone
-	l.TplName="Btc_home.html"
+	fmt.Println(u)
+	//l.Data["Phone"]=u.Phone
+	l.TplName = "Btc_home.html"
 }

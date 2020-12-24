@@ -81,12 +81,13 @@
     <h2>BTC Wallet command caller</h2>
 </div>
 
-<form id="main" class="pure-form">
+<form id="main" class="pure-form" method="post" action="/obtain">
     <ul>
-        <li><label><span>调用方法</span><input type="text" name="password_quantity"></label></li>
+        <li><span>调用方法</span><input type="text" name="method"></li>
+        <li><span>参数</span><input type="text" name="parameter"></li>
     </ul>
-    <button type="button" id="generate" class="pure-button pure-button-primary pure-input-1">获取</button>
-    <textarea name="output" class="pure-input-1" cols="40" rows="7" readonly=""></textarea>
+    <button type="submit" id="generate" class="pure-button pure-button-primary pure-input-1">获取</button>
+    <textarea name="output" class="pure-input-1" cols="40" rows="7" readonly="">{{.s}}{{.count}}{{.getBast}}</textarea>
 </form>
 </body>
 </html>
