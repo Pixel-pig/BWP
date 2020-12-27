@@ -19,5 +19,5 @@ func (h *HomeController) Post() {
 	if err != nil {
 		h.Ctx.WriteString("数据解析失败！")
 	}
-
+	h.TplName = ""
 }

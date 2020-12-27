@@ -1,7 +1,7 @@
 package modles
 
 import (
-	db_mysql2 "BtcProject/db_mysql"
+	"BWP/db_mysql"
 	"fmt"
 )
 
@@ -13,7 +13,7 @@ type User1 struct {
 }
 
 func (u User1) SaveUser()(int64,error) {
-	result,err := db_mysql2.Db.Exec("insert into login(phone, password,name)"+"values(?,?,?)",u.Phone,u.Password,u.Name)
+	result,err := db_mysql.Db.Exec("insert into login(phone, password,name)"+"values(?,?,?)",u.Phone,u.Password,u.Name)
 	if err != nil {
 		return -1,err
 	}
@@ -25,7 +25,7 @@ func (u User1) SaveUser()(int64,error) {
 }
 
 func (u User1) QueryUser()(*User1,error) {
-	row := db_mysql2.Db.QueryRow("select name from login where name = ? and password = ?",u.Name,u.Password)
+	row := db_mysql.Db.QueryRow("select name from login where name = ? and password = ?",u.Name,u.Password)
 	err := row.Scan(&u.Phone)
 	if err != nil {
 		fmt.Println(err.Error())

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"BtcProject/db_mysql"
-	_ "BtcProject/routers"
+	"BWP/db_mysql"
+	_"BWP/routers"
 	"github.com/astaxie/beego"
 )
 

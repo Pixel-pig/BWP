@@ -20,4 +20,6 @@ func init() {
 	beego.Router("/home.html",&controllers.HomeController{})
     //主页面查询
     beego.Router("/home",&controllers.HomeController{})
+    //查询页面
+    beego.Router("/query.html",&controllers.QueryController{})
 }
