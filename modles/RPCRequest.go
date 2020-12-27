@@ -1,9 +1,8 @@
-package rpc
+package modles
 
-//存储rpc-json规范的结构体
-type RpsJson struct {
+type RPCRequest struct {
 	Id      int64         `json:"id"`
-	Rpcjson string        `json:"rpcjson"`
 	Method  string        `json:"method"`
+	JsonRpc string        `json:"jsonrpc"`
 	Params  []interface{} `json:"params"`
 }

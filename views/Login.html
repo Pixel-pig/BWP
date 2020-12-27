@@ -1,36 +1,141 @@
 <!DOCTYPE html>
+<!-- saved from url=(0152)https://passport.58.com/login?path=https%3A%2F%2Fnc.58.com%2F%3Futm_source%3Dmarket%26spm%3Db-31580022738699-pe-f-834.123sogou_101%26pts%3D1608511503806 -->
 <html lang="en">
 <head>
-    <title>区块链学习工具</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/three.js/r63/three.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/css/login.css">
-    <script type="text/javascript" src="/static/js/login.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>比特币钱包命令系统用户登入</title>
+    <script type="text/javascript" src="./static/js/ppt_securitye.js"></script>
+    <script type="text/javascript" src="./static/js/rpdata.buddle.js"></script>
+    <script type="text/javascript" src="./static/js/passport_fingerprint2.js"></script>
+    <script type="text/javascript" src="./static/js/ppfingerprint.js"></script>
+    <script type="text/javascript" src="./static/js/ppt_security.js"></script>
+    <script type="text/javascript" src="./static/js/isd_captcha.js"></script>
+    <script type="text/javascript" src="./static/js/challenge_pop.js"></script>
+    <script type="text/javascript" src="./static/js/securityGuide_pop.js"></script>
+    <script type="text/javascript" src="./static/js/guideInit_pop.js"></script>
+    <script type="text/javascript" src="./static/js/wxLogin.js"></script>
+    <link rel="stylesheet" href="./static/css/public.css"
+          id="//c.58cdn.com.cn/git/teg-app-fe/passport-pc-ui/css/passport/public.css">
+    <link rel="stylesheet" href="./static/css/orange_red.css"
+          id="//c.58cdn.com.cn/git/teg-app-fe/passport-pc-ui/css/passport/skin/orange_red.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./static/img/favicon1.ico">
+    <script type="text/javascript" src="./static/js/index.js"></script>
+    <script type="text/javascript" src="./static/js/swfobject.js"></script>
+    <script type="text/javascript" src="./static/js/sha1.js"></script>
+    <script type="text/javascript" src="./static/js/finger.sp.min.js"></script>
 </head>
 <body>
 
-<div class="main">
-    <div class="login">
-        <form method="post" action="/Userlogin">
-            <div class="log-con">
-                <span>登录</span>
-                <label>
-                    <input type="text" name="username" class="name" placeholder="请输入用户名"/>
-                    <input type="text" name="pwd" class="password" placeholder="请输入密码"/>
-                    <input type="text" class="code" placeholder="请输入验证码"/>
-                </label>
-                <input type="button" id="code" onclick="change();"/>
-                <input type="submit" value="立即登录">
+<script>
+    window.SOURCE = "58-default-pc"
+    window.PATH = "https%3A%2F%2Fnc.58.com%2F%3Futm_source%3Dmarket%26spm%3Db-31580022738699-pe-f-834.123sogou_101%26pts%3D1608511569653"
+    window.MOBILE = ""
+    window.UNAME = ""
+    window.ISREDIRECT = "false"
+</script>
+<script>
+    window.WMDA_SDK_CONFIG = ({
+        api_v: 1,
+        sdk_v: 0.1,
+        mode: 'report',
+        appid: 10975735100726,
+        key: 'byf51lz9',
+        project_id: '10104579731767',
+        cate_id: '',   //按需填写
+        page_extra: [{   //按需填写
+            key: '',
+            value: ''
+        }],
+        user_extra: [{   //按需填写
+            key: '',
+            value: ''
+        }],
+        channel: '',   //按需填写
+        getUserId: function () {
+        },   //按需填写
+        SPA_HASH: true, //单页应用必选
+    });
+</script>
+<script src="./static/js/statistic_v20201103104710.js"></script>
+<script src="./static/js/tracker.sp.min_v20181012113949.js"></script>
+<script src="./static/js/mobileLogin_v20201209110852.js"></script>
+<script src="./static/js/login_v20201216101349.js"></script>
+
+<div id="pop_body" style="display: block;"><img src="./static/img/reg-bg.png" id="bg">
+    <div class="bg_mask"></div>
+    <div class="overflow"></div>
+    <div class="Top_links"><a class="backHome" href="/home.html">返回首页</a> <a class="register"
+                                                                                      href="/register.html">没有账号？去注册</a>
+    </div>
+    <div id="mask_body" style="top: 44px;">
+        <div class="password_login">
+            <div class="mask_body_item change_login"><span>账号密码登录</span>
             </div>
-        </form>
+            <form method="post" action="/login">
+            <div class="account_login" style="display: block;">
+                <div class="mask_body_item" id="mask_body_item_user_name"><input class="pop_input" type="text" name="name"
+                                                                                 id="mask_body_item_username"
+                                                                                 placeholder="账号名" maxlength="40">
+                    <div id="user_list_icon" class="user-list-down" style="display: none;"></div>
+                    <ul id="user_list_body"></ul>
+                </div>
+                <div class="error_msg username"><span class="msgIcon"></span><label class="msgColor">您还未输入账号名</label>
+                </div>
+                <div class="slidecode_account">
+                    <div id="slidecodediv_account"></div>
+                </div>
+                <div class="mask_body_item verifycode_div_account"><input class="pop_input" type="text"
+                                                                          id="mask_body_item_verifycode_account"
+                                                                          placeholder="验证码" maxlength="5"><img
+                            id="mask_body_item_verifyimg_account"></div>
+                <div class="error_msg verifycode_account"><span class="msgIcon"></span><label
+                            class="msgColor">您还未输入验证码</label></div>
+                <div class="mask_body_item" id="mask_body_item_remember_pwd"><input class="pop_input" type="password"
+                                                                                    name="password"
+                                                                                    autocomplete="new-password"
+                                                                                    id="mask_body_item_newpassword"
+                                                                                    placeholder="密码" maxlength="16">
+                    <div id="user_list_clear" style="display: none;"></div>
+                    <div id="user_list_eyes" class="password-hide" style="display: block;"></div>
+                </div>
+                <div class="error_msg newpassword"><span class="msgIcon"></span><label
+                            class="msgColor">密码太短，最少6位</label></div>
+                <div class="link_entries">
+                    <div id="link_entries_btns" style="display: block;"></div>
+                    <a class="forgetPwdRedirect"
+                       href="https://passport.58.com/forgetpassword?path=https%3A%2F%2Fnc.58.com%2F%3Futm_source%3Dmarket%26spm%3Db-31580022738699-pe-f-834.123sogou_101%26pts%3D1608511569653&amp;isredirect=false&amp;source=58-default-pc">忘记密码</a>
+                </div>
+            </div>
+            <div class="mask_body_item login_item baseColorBg loginBtn">
+                <button loginmode="accountlogin" id="mask_body_item_login" style="opacity: 0.6;" type="submit">登录</button>
+            </div>
+            </form>
+            <div class="mask_body_item_protocol"><span class="protocol">登录即同意<a target="_blank" class="baseColorFt"
+                                                                                href="https://helps.58.com/rules/detail?siteId=5502&amp;terminal=PC&amp;contentId=301217&amp;sourceType=58pc-nr-gzxy&amp;spReturn=1">《比特币系统使用协议》</a>&amp;<a
+                            target="_blank" class="baseColorFt"
+                            href="https://helps.58.com/rules/detail?siteId=5502&amp;terminal=PC&amp;contentId=301218&amp;sourceType=58pc-nr-gzxy&amp;spReturn=1">《隐私政策》</a></span>
+            </div>
+        <div class="links_botton"><a>© Bitcoin.com</a> <a
+                    href="https://ai.58.com/pc/#/guide/scene_id=2&amp;joinfrom=login">联系客服</a> <a
+                    href="https://helps.58.com/base/home?siteId=5601&amp;terminal=PC&amp;sourceType=58pc-dl-bz">帮助</a>
+            <div class="clear"></div>
+        </div>
+        <div id="riskmsg">
+            <div><p id="risktext">检测到您在新设备登录，为了验证账号安全，我们将以语音电话的方式给您发送验证码，请您注意保持电话畅通</p> <span id="riskbtn"
+                                                                                              class="baseColorBg">我知道了</span>
+            </div>
+        </div>
     </div>
 </div>
-<div class="copyright">
-    <a>版权所有　© C190603 H GROUP</a>
+<div id="ads"></div>
+<object type="application/x-shockwave-flash" width="1" height="1" id="trackerFp" style="visibility: visible;">
+    <param name="allowScriptAccess" value="always">
+    <param name="menu" value="false">
+    <param name="flashvars" value="onReady=___fp_swf_loaded">
+</object>
 </div>
-
-
 </body>
 </html>

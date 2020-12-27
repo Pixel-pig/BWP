@@ -1,15 +1,14 @@
 package main
 
 import (
-	_ "BWP/routers"
+	"BtcProject/db_mysql"
+	_ "BtcProject/routers"
 	"github.com/astaxie/beego"
 )
 
 func main() {
-	//加载静态资源
-	beego.SetStaticPath("/img","./static/img")
-	beego.SetStaticPath("/css","./static/css")
-	beego.SetStaticPath("/js","./static/js")
+
+	db_mysql.ConnectSql()
 
 	beego.Run()
 }

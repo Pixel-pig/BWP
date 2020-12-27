@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BWP.iml" filepath="$PROJECT_DIR$/.idea/BWP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/BtcProject.iml" filepath="$PROJECT_DIR$/.idea/BtcProject.iml" />
     </modules>
   </component>
 </project>

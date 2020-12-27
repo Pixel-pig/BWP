@@ -1,0 +1,24 @@
+#pop_body .baseColorBg, #pop_body #mask_body .baseColorBg {
+    background: #ff552e
+}
+
+#pop_body .baseColorFt, #pop_body #mask_body .baseColorFt {
+    color: #ff552e
+}
+
+#pop_body .msgIcon, #pop_body #mask_body .msgIcon {
+    background-image: url("//img.58cdn.com.cn/passportnew/img/flerroricon.png")
+}
+
+#pop_body .chooseChallenge_icon, #pop_body #mask_body .chooseChallenge_icon {
+    background-image: url("//img.58cdn.com.cn/git/teg-app-fe/passport-pc/img/盾牌@1x.png")
+}
+
+#pop_body .password_login .change_login .active, #pop_body #mask_body .password_login .change_login .active {
+    color: #ff552e;
+    border-bottom: 1px solid #ff552e
+}
+
+#pop_body .disabled, #pop_body #mask_body .disabled {
+    color: #999999
+}
