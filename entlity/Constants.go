@@ -19,3 +19,12 @@ const GETBESTBLOCKHASH = "getbestblockhash"
 
 ////根据区块hash获取区块信息
 const GETBLOCK = "getblock"
+
+//根据指定高度获取该高度区块的hash
+const GETBLOCKHASH = "getblockhash"
+
+//获取区块链节点的信息
+const GETBLOCKCHAININFO = "getblockchaininfo"
+
+//获取当前区块难度
+const GETDIFFICULTY = "getdifficulty"

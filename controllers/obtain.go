@@ -15,38 +15,41 @@ type Obtain struct {
 func (o *Obtain) Get() {
 	o.TplName = "obtain.html"
 }
-
-var count interface{}
-var getBast interface{}
-
-func (h *Obtain) Post() {
+func (o *Obtain) Post() {
 	var users models.Users
-	err := h.ParseForm(&users)
+	err := o.ParseForm(&users)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 	switch users.Method {
-	case entlity.GETBLOCKCOUNT :
-		count = util.GetBlockCount()
+	case entlity.GETBLOCKCOUNT:
+		count := util.GetBlockCount()
 		//temp = count.(string)
-		h.Data["s"]="区块的总数:"
-		h.Data["count"]=count
+		o.Data["s"] = "区块的总数:"
+		o.Data["count"] = count
 	case entlity.GETBESTBLOCKHASH:
-		getBast = util.GetBestBlockHash()
-		h.Data["s"]="区块的哈希:"
-		h.Data["getBast"]=getBast
+		getBast := util.GetBestBlockHash()
+		o.Data["s"] = "最新区块的哈希:"
+		o.Data["getBast"] = getBast
+	case entlity.GETBLOCK:
+		information := util.GetBlock(users.Parameter)
+		o.Data["s"] = "区块的信息:"
+		o.Data["information"] = information
+	//case entlity.GETBLOCKHASH:
+	//	hash := util.GetBlockHash(users.Parameter)
+	//	o.Data["s"] = "指定区块的hash:"
+	//	o.Data["hash"] = hash
+	case entlity.GETBLOCKCHAININFO:
+		blockinfo := util.GetBlockChainInfo()
+		o.Data["s"] = "区块链信息:"
+		o.Data["blockinfo"] = blockinfo
+	case entlity.GETDIFFICULTY:
+		difficulty:=util.Getdifficulty()
+		o.Data["s"]="区块的难度:"
+		o.Data["difficulty"]=difficulty
 	default:
 		fmt.Println("方法错误，请查看手册")
 	}
-	//if users.Method == entlity.GETBLOCKCOUNT {
-	//	count = util.GetBlockCount()
-	//	//temp = count.(string)
-	//	h.Data["s"]="区块的总数:"
-	//	h.Data["count"]=count
-	//	return
-	//} else {
-	//	h.Ctx.WriteString("方法错误，请查看手册")
-	//}
-	h.TplName = "obtain.html"
+	o.TplName = "obtain.html"
 }

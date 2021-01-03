@@ -6,12 +6,14 @@ import (
 )
 
 type Users struct {
-	Id        int64  `form:"id"`
-	Phone     string `form:"phone"`
-	User      string `form:"user"`
-	Password  string `form:"password"`
-	Method    string `form:"method"`
-	Parameter string `form:"parameter"`
+	Id         int64       `form:"id"`
+	Phone      int64       `form:"phone"`
+	User       string      `form:"user"`
+	Password   string      `form:"password"`
+	Method     string      `form:"method"`
+	Parameter  interface{} `form:"parameter"`
+	Parameter1 interface{} `form:"parameter1"`
+	Parameter2 interface{} `form:"parameter2"`
 }
 
 func (u Users) SaveUser() (int64, error) {
