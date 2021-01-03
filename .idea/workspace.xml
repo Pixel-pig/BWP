@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75e00d87-6f90-46e5-bdea-064f3cc5e834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/entlity/BlockInfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/address.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/login.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/obtain.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/obtain.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entlity/Block.go" beforeDir="false" afterPath="$PROJECT_DIR$/entlity/Block.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entlity/Constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/entlity/Constants.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/BTCService.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/BTCService.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Btc_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/Btc_home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/obtain.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/obtain.html" afterDir="false" />
-    </list>
+    <list default="true" id="75e00d87-6f90-46e5-bdea-064f3cc5e834" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
