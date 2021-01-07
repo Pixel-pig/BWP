@@ -1,13 +1,15 @@
 package routers
 
 import (
-	"BWP/controllers"
+	"BWPjy/controllers"
 	"github.com/astaxie/beego"
 )
-
 func init() {
-	//登录页面
     beego.Router("/", &controllers.MainController{})
-    //登录操作
-	beego.Router("/Userlogin", &controllers.UserloginController{})
+    //处理登录页面请求
+    beego.Router("/login",&controllers.LonginControllers{})
+    //处理注册页面请求
+    beego.Router("/regist",&controllers.RegistControllers{})
+    //home页面请求
+    beego.Router("/home",&controllers.HomeControllers{})
 }

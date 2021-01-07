@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>代码雨背景用户注册表单代码 </title>
-    <link type="text/css" href="/static/css/regist.css" rel="stylesheet"/>
+    <link type="text/css" href="../static/css/regist.css" rel="stylesheet"/>
 </head>
 <body>
 <!-- 登录 -->
 <div class="register">
-    <form id="ajaxForm" class="login-wrap">
+    <form id="ajaxForm" class="login-wrap" action="/regist" method="post">
         <img class="avatar" src="img/4.jpg">
         <ul>
             <li>
                 <label for="">用 户 名 :</label>
-                <input type="text" name="userName" class="name">
+                <input type="text" name="name" class="name">
             </li>
             <li>
                 <label for="">设置密码 :</label>
@@ -25,17 +25,8 @@
                 <input type="password" name="" class="repass">
             </li>
             <li>
-                <label for="">验证手机 :</label>
-                <input type="text" name="phone" class="mobile">
-            </li>
-            <li>
-                <label for="">短信验证 :</label>
-                <input type="text" name="" class="code">
-                <input type="button" value="获取验证码" class="verify">
-            </li>
-            <li>
                 <label for=""></label>
-                <input type="button" class="submit " value="立即注册">
+                <input type="submit" value="立即注册">
             </li>
         </ul>
     </form>

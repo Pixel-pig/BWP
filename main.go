@@ -1,16 +1,13 @@
 package main
 
 import (
-	_ "BWP/routers"
+	"BWPjy/dbMysql"
+	_ "BWPjy/routers"
 	"github.com/astaxie/beego"
 )
 
 func main() {
-	//加载静态资源
-	beego.SetStaticPath("/img","./static/img")
-	beego.SetStaticPath("/css","./static/css")
-	beego.SetStaticPath("/js","./static/js")
-
+	dbMysql.ConnectDB()
 	beego.Run()
 }
 
