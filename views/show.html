@@ -371,16 +371,16 @@
                         <h2>BTC Wallet command caller</h2>
                     </div>
                     <div style="text-align: center;margin-top: 30px">
-                    <form id="main" class="pure-form" method="post" action="/query">
-                        <ul>
-                            <li><span>调用方法</span>&nbsp;&nbsp;<input type="text" name="method"></li></br>
-                            <li><span>参数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="param"></li></br>
-                            <li><span>参数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="param1"></li></br>
-                            <li><span>参数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="param2"></li>
-                        </ul>
-                        <div style="margin-bottom: 10px;margin-top: 10px"><button type="submit" id="generate" class="pure-button pure-button-primary pure-input-1">获取</button></div>
-                        <textarea name="output" class="pure-input-1" cols="40" rows="7" readonly="">{{.s}}{{.count}}{{.besthash}}</textarea>
-                    </form>
+                        <form id="main" class="pure-form" method="post" action="/query">
+                            <ul>
+                                <li><span>调用方法</span>&nbsp;&nbsp;<input type="text" name="method"></li></br>
+                                <li><span>参数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="param"></li></br>
+                                <li><span>参数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="param1"></li></br>
+                                <li><span>参数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="param2"></li>
+                            </ul>
+                            <div style="margin-bottom: 10px;margin-top: 10px"><button type="submit" id="generate" class="pure-button pure-button-primary pure-input-1">获取</button></div>
+                            <textarea name="output" class="pure-input-1" cols="40" rows="7" readonly="">{{.s}}{{.count}}</textarea>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -18,8 +18,8 @@ func init() {
     beego.Router("/register", &controllers.RegisterController{})
 	//返回主页面
 	beego.Router("/home.html",&controllers.HomeController{})
-    //主页面查询
-    beego.Router("/home",&controllers.HomeController{})
     //查询页面
     beego.Router("/query.html",&controllers.QueryController{})
+    //查询页面内容提交
+    beego.Router("/query",&controllers.QueryController{})
 }

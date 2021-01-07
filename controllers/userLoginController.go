@@ -22,7 +22,7 @@ func (l *LoginController) Post() {
 	}
 	u,err := user.QueryUser()
 	if err != nil {
-		l.Ctx.WriteString("数据库保存失败！请重试")
+		l.Ctx.WriteString("数据库查询失败！请重试")
 	}
 	l.Data["Name"] = u.Name
 	l.TplName = "home.html"
